@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "Bohemian Typewriter";
+    src: url("static/fonts/Bohemian Typewriter.ttf") format('truetype');
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("static/images/background.jpg");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-origin: content;
+    overflow: hidden;
+}
+
+#outer-container,
+#inner-container {
+    display: block;
+}
+
+#outer-container {
+    width: auto;
+    height: 90vh;
+    aspect-ratio: 1528 / 884;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 0;
+
+    background-image: url("static/images/paper.png");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-origin: content;
+    overflow: hidden;
+}
+
+#inner-container {
+    width: 92%;
+    height: 86%;
+    
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+
+#text-map-name {
+    width: auto;
+    height: 10%;
+    aspect-ratio: 448 / 68;
+
+    float: right;
+
+    background-image: url("static/images/missiondetails.png");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-origin: content;
+    overflow: hidden;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 110%;
+    font-family: 'Bohemian Typewriter';
+    src: url("static/fonts/Bohemian Typewriter.ttf") format('truetype');
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% {opacity: 1;}
+}
+
+.picture {
+    animation: fadeIn 4s;
+
+    width: 55vw;
+    height: auto;
+    aspect-ratio: 16 / 9;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-image: url("https://cdn.discordapp.com/attachments/1086377446942712008/1086380203602878494/20221005191702_1.jpg?ex=66c84328&is=66c6f1a8&hm=da8b23fb1f51a3d5de8491a85ab4c40140fca30c7a7dca6b6ec3fb92ea8aba57&");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-origin: content;
+    overflow: hidden;
+
+    border-style: solid;
+    border-color: ivory;
+    border-width: 1vh;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.advice {
+    width: auto;
+    height: 100px;
+    aspect-ratio: 368 / 130;
+    
+    float: right;
+    bottom: 0;
+
+    background-image: url("static/images/mapdetails.png");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background-origin: content;
+    overflow: hidden;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 90%;
+    font-family: 'Bohemian Typewriter';
+    src: url("static/fonts/Bohemian Typewriter.ttf") format('truetype');
+}
