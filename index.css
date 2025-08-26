@@ -27,8 +27,8 @@ body {
 }
 
 #outer-container {
-    width: auto;
-    height: 90vh;
+    width: 90%;
+    height: 90%;
     aspect-ratio: 1528 / 884;
 
     position: absolute;
