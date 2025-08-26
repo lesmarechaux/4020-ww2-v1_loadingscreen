@@ -21,14 +21,35 @@ body {
     overflow: hidden;
 }
 
+#outer-paper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80vw;
+    max-width: 1528px;
+}
+
+#outer-paper div {
+    width: 100%;
+    padding-top: 57.85%;
+
+    background-image: url("static/images/paper.png");
+    background-repeat: no-repeat;
+}
+
 #outer-container,
 #inner-container {
     display: block;
 }
 
 #outer-container {
+    max-height: 884px;
+    max-width: 1528px;
+
     height: 90%;
-    aspect-ratio: 1528 / 884;
+    width: 90%;
 
     position: absolute;
     left: 50%;
@@ -57,7 +78,7 @@ body {
 
 #text-map-name {
     height: 10%;
-    aspect-ratio: 448 / 68;
+    width: auto;
 
     float: right;
 
