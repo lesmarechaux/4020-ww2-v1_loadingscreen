@@ -1,8 +1,11 @@
 const mapNames = {
     "lmx_ardennes": "Trifigniac-les-choux, Ardennes, France",
+    "lmx_devmap": "Quelque part, hors de ce monde",
+    "lmx_falaise_v2g": "Falaise, Normandie, France",
+    "lmx_formaus": "Westpoint Junior, US. of A",
     "lmx_sud": "Maratea, Potenza, Italie",
     "lmx_sudfrforma": "Centre de formation, Moissac, France",
-    "lmx_falaise_v2g": "Falaise, Normandie, France",
+    "lmx_westerwaldformaall": "Ta race",
 }
 
 function getMapName( mapname ) {
@@ -45,7 +48,7 @@ function getAdvice() {
 }
 
 function GameDetails( servername, serverurl, mapname, maxplayers, steamid, gamemode, volume, language ) {
-    const textMapName = document.getElementById( "text-map-name" );
+    const textMapName = document.getElementById( "mapname" );
     textMapName.innerHTML = getMapName( mapname );
 
     // var lastImage = getMapImage( mapname );
